@@ -1,0 +1,65 @@
+:root {
+  --color-primary: #E50942;
+  --color-primary-hover: #C50638;
+  --color-primary-light: #FF3B70;
+  --color-secondary: #0D1B2A;
+  --color-success: #10B981;
+  --color-success-hover: #0E9F6E;
+  
+  --color-text-dark: #111827;
+  --color-text-gray: #4B5563;
+  --color-text-light: #9CA3AF;
+  --color-text-white: #FFFFFF;
+  
+  --color-bg-main: #F9FAFB;
+  --color-bg-white: #FFFFFF;
+  --color-border: #E5E7EB;
+
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg-main);
+  color: var(--color-text-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input {
+  font-family: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--color-bg-white);
+  position: relative;
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-bg-white);
+  min-height: 100vh;
+}

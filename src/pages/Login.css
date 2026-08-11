@@ -1,0 +1,174 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  background-color: #F3F4F6;
+}
+
+.search-section {
+  padding: 16px 20px;
+  background-color: var(--color-bg-white);
+}
+
+.hero-banner {
+  background: linear-gradient(135deg, #E50942 0%, #B00530 100%);
+  padding: 32px 24px 64px 24px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 24px 24px;
+  color: white;
+  min-height: 220px;
+}
+
+.hero-banner::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+  top: -50px;
+  right: -50px;
+  border-radius: 50%;
+}
+
+.hero-title {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  max-width: 250px;
+  position: relative;
+  z-index: 1;
+}
+
+.badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+}
+
+.login-card-wrapper {
+  padding: 0 20px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 10;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card {
+  background-color: var(--color-bg-white);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-text {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-secondary);
+  margin-bottom: 8px;
+}
+
+.subtitle-text {
+  color: var(--color-text-gray);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.terms-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 20px 0 24px 0;
+}
+
+.terms-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--color-primary);
+}
+
+.terms-text {
+  font-size: 13px;
+  color: var(--color-text-gray);
+  line-height: 1.5;
+}
+
+.link-text {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 24px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.divider span {
+  padding: 0 12px;
+  color: var(--color-text-light);
+  font-size: 13px;
+}
+
+.google-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-fab {
+  position: fixed;
+  bottom: 24px;
+  right: calc(50% - 240px + 24px); /* Responsive positioning based on container max-width */
+  background-color: var(--color-success);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+  z-index: 100;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.whatsapp-fab:hover {
+  transform: translateY(-2px);
+  background-color: var(--color-success-hover);
+}
+
+@media (max-width: 480px) {
+  .whatsapp-fab {
+    right: 24px;
+  }
+}

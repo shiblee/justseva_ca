@@ -1,0 +1,88 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+}
+
+.topbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+  letter-spacing: -0.5px;
+}
+
+.topbar-logo span {
+  color: #4A90E2; /* Blue part of the text if needed, otherwise solid */
+}
+
+.topbar-logo-img {
+  height: 50px;
+  max-width: 200px;
+  width: auto;
+  object-fit: contain;
+}
+
+.signin-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(229, 9, 66, 0.2);
+}
+
+.signin-btn:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 8px rgba(229, 9, 66, 0.3);
+}
+
+.signin-btn:active {
+  transform: translateY(0);
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: 1.5px solid #e5e7eb;
+  background-color: transparent;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.icon-btn:active {
+  background-color: #f3f4f6;
+  transform: scale(0.96);
+}

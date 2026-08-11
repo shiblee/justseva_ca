@@ -1,0 +1,6 @@
+{
+  "appId": "com.justseva.app",
+  "appName": "JustSeva",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

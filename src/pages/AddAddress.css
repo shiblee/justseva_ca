@@ -1,0 +1,449 @@
+.add-address-page {
+  background-color: #f8fafc !important;
+  min-height: 100vh;
+  padding-bottom: 80px; /* space for bottom nav */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.add-address-page-header {
+  padding: 24px 24px 0;
+  max-width: 600px;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  background: rgba(248, 250, 252, 0.9);
+  backdrop-filter: blur(12px);
+  z-index: 10;
+}
+
+.back-icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.back-icon-btn:hover {
+  background-color: #f1f5f9;
+}
+
+.header-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  flex: 1;
+}
+
+.address-count-badge {
+  background-color: #fff1f2;
+  color: #e50942;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid #ffe4e6;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address-count-badge:hover {
+  background-color: #ffe4e6;
+}
+
+/* ==================================
+   FORM VIEW STYLES (Existing UI)
+   ================================== */
+.profile-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 24px 24px 24px;
+}
+
+.profile-card {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  padding: 0;
+  margin-bottom: 32px;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.map-form-card > div:first-child {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  border: 4px solid #ffffff;
+  background: #ffffff;
+  margin-bottom: 16px;
+}
+
+.use-location-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #0ea5e9;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.address-search-group {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.address-type-section {
+  margin-top: 24px;
+}
+
+.type-label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 12px;
+}
+
+.type-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  padding-bottom: 4px; /* Slight padding for smooth scroll */
+}
+
+.type-buttons::-webkit-scrollbar {
+  display: none;
+}
+
+.type-btn {
+  padding: 10px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: white;
+  color: #64748b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.type-btn:hover {
+  border-color: #cbd5e1;
+}
+
+.type-btn.active {
+  border-color: #e50942;
+  color: #e50942;
+  background-color: #fff1f2;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #e50942, #ff4d6d);
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  box-shadow: 0 8px 24px rgba(229, 9, 66, 0.25);
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ==================================
+   LIST VIEW STYLES
+   ================================== */
+.address-list-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 24px 24px 24px;
+}
+
+.add-new-address-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: #ffffff;
+  border: 2px dashed #cbd5e1;
+  color: #e50942;
+  border-radius: 16px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-bottom: 32px;
+  transition: all 0.2s;
+}
+
+.add-new-address-btn:hover {
+  background-color: #fff1f2;
+  border-color: #fda4af;
+}
+
+.saved-addresses-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.saved-addresses-header h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.address-count {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 600;
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.address-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.address-card-item {
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+.address-card-item:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.04);
+}
+
+.address-card-item.selected {
+  border: 2px solid #e50942;
+  background: #fffbfa;
+}
+
+.address-card-icon {
+  background: #f1f5f9;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.address-card-item.selected .address-card-icon {
+  background: #ffe4e6;
+}
+
+.address-card-details {
+  flex: 1;
+}
+
+.address-card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.address-card-title-row h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.selected-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #e50942;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.address-card-details p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.5;
+  padding-right: 30px; /* Space for action icons */
+}
+
+.address-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+}
+
+.action-icon-btn {
+  background: #f8fafc;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #64748b;
+}
+
+.action-icon-btn:hover {
+  background: #e2e8f0;
+}
+
+.action-icon-btn.edit:hover {
+  color: #3b82f6;
+  background: #eff6ff;
+}
+
+.action-icon-btn.delete:hover {
+  color: #ef4444;
+  background: #fef2f2;
+}
+
+/* ==================================
+   LOADING & MODAL STYLES
+   ================================== */
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  color: #64748b;
+}
+
+.custom-confirm-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-confirm-box {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  width: 90%;
+  max-width: 340px;
+  text-align: center;
+  animation: scaleUp 0.2s ease-out;
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.custom-confirm-box h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.custom-confirm-box p {
+  margin: 0 0 24px 0;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.confirm-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.cancel-btn, .delete-btn {
+  flex: 1;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cancel-btn {
+  background: #f1f5f9;
+  border: none;
+  color: #475569;
+}
+
+.cancel-btn:hover {
+  background: #e2e8f0;
+}
+
+.delete-btn {
+  background: #ef4444;
+  border: none;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
